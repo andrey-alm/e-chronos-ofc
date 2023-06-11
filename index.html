@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title> E-Chronos </title>
+        <link rel = "icon" href = "img/favicon.ico">
+        <link rel = "stylesheet" href = "css/index.css">
+        <script src = "js/index.js" defer> </script>
+    </head>
+    <body onresize = "adequarMenu()">
+        <header class = "cabecalho">
+            <div class = "cabecalho-imagem">
+                <img src = "img/logotipo.png" alt = "Logo da E-Chronos">
+                <h1 class = "nome-empresa"> E-Chronos </h1>
+            </div>
+
+            <div class = "cabecalho-ham">
+                <ion-icon class = "abrir" name = "reorder-three-outline"> </ion-icon>
+                <ion-icon class = "fechar" name = "close-outline"> </ion-icon>
+            </div>
+
+            <nav class = "cabecalho-menu">
+                <a class = "menu-item" href = "#" target = "_blank" rel = "noopener"> Criar Conta </a>
+                <a class = "menu-item" href = "#" target = "_blank" rel = "noopener"> Saiba Mais </a>
+                <a class = "menu-item" href = "#" target = "_blank" rel = "noopener"> Viagem </a>
+            </nav>
+        </header>
+
+        <main>
+            <section class = "conteudo">
+                <div class = "conteudo-login">
+                    <div class = "login-imagem">
+                        <img src = "img/logotipo.png" alt = "Logo da E-Chronos">
+                    </div>
+
+                    <form class = "login-formulario">
+                        <input id = "username" type = "text" placeholder = "Digite seu nome de usuário..." autofocus required>
+                        <input id = "password" type = "password" placeholder = "Digite sua senha..." required>
+                        <input id = "form-submit" type = "submit" value = "Entrar">
+                    </form>
+
+                    <p class = "login-descricao">
+                        <a href = "#" target = "_blank" rel = "noopener"> Criar conta </a> |
+                        <a href = "#" target = "_blank" rel = "noopener"> Esqueceu sua senha? </a>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <script type = "module" src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
+        <script nomodule src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
+    </body>
+</html>

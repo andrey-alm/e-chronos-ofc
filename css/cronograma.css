@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #bbf1d0;
+    font-family: sans-serif;
+}
+
+ion-icon {
+    font-size: 40px;
+}
+
+.cabecalho {
+    background-color: #bbf1d0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cabecalho-imagem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.cabecalho-imagem img {
+    width: 50px;
+    height: 50px;
+}
+
+.cabecalho-imagem h1 {
+    color: #cd426a;
+}
+
+.cabecalho-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.menu-item {
+    color: #141414;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.menu-item:hover {
+    background-color: #15a97d;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.4px solid #141414;
+}
+
+.conteudo-calendario {
+    background-color: #141414;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.calendario-title {
+    color: #fafafa;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.calendario-meses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.calendario-meses div {
+    background-image: linear-gradient(#1aa37a, #9dffb3);
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 14%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.calendario-meses div:hover {
+    background-image: linear-gradient(#cd426a, #eca3b8);
+    cursor: pointer;
+}
+
+.calendario-meses div p {
+    font-size: 20px;
+}
+
+.calendario-meses div h3 {
+    font-size: 25px;
+}
+
+.calendario-descricao p {
+    color: #fafafa;
+    text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .cabecalho-menu {
+        display: none;
+    }
+
+    .calendario-meses div {
+        flex-basis: 20%;
+    }
+}

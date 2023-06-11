@@ -144,6 +144,12 @@ main {
 }
 
 .login-descricao a:hover {
+    color: #cd426a;
+    text-decoration: underline #cd426a 2px;
+}
+
+.login-descricao:focus {
+    color: #cd426a;
     text-decoration: underline #cd426a 2px;
 }
 

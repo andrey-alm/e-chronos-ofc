@@ -104,6 +104,10 @@ main {
     height: 4.375rem;
 }
 
+.login-imagem h3 {
+    color: #141414;
+}
+
 .login-formulario {
     display: flex;
     flex-direction: column;
@@ -140,7 +144,7 @@ main {
 }
 
 .login-descricao a:hover {
-    color: #ce2454;
+    text-decoration: underline #cd426a 2px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {

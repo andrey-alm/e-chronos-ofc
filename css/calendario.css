@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #bbf1d0;
+    font-family: "Poppins", sans-serif;
+}
+
+ion-icon {
+    font-size: 2.5rem;
+}
+
+.cabecalho {
+    background-color: #bbf1d0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem;
+}
+
+.cabecalho-imagem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.cabecalho-imagem img {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.cabecalho-imagem h1 {
+    color: #cd426a;
+    font-size: 2rem;
+}
+
+.cabecalho-ham {
+    display: none;
+}
+
+.cabecalho-ham .fechar {
+    display: none;
+}
+
+.cabecalho-ham ion-icon {
+    color: #141414;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.cabecalho-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.875rem;
+}
+
+.menu-item {
+    color: #141414;
+    font-family: "Inter";
+    text-decoration: none;
+    padding: 0.625rem;
+    border-bottom: 2px solid transparent;
+}
+
+.menu-item:hover {
+    transition: 0.3s;
+    border-bottom: 2px solid #141414;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.4px solid #141414;
+}
+
+.calendario {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    border-radius: 10px;
+}
+
+.calendario-cabecalho {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+.cabecalho-icones {
+    display: flex;
+    flex-direction: row;
+}
+
+.cabecalho-icones span {
+    height: 2.375rem;
+    width: 2.375rem;
+    margin: 0 0.125rem;
+    cursor: pointer;
+    color: #cccccc;
+    text-align: center;
+    line-height: 2.375rem;
+    font-size: 1.875rem;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.cabecalho-icones span:last-child {
+    margin-right: -0.625rem;
+}
+
+.cabecalho-icones span:hover {
+    background-color: #fafafa;
+}
+
+.cabecalho-data {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.calendario-conteudo {
+    padding: 1.25rem;
+}
+
+.calendario-conteudo ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+.conteudo-dias {
+    margin-bottom: 1.25rem;
+}
+
+.calendario-conteudo li {
+    color: #141414;
+    width: calc(100% / 7);
+    font-size: 1.125rem;
+}
+
+.conteudo-semanas li {
+    font-weight: 500;
+    cursor: default;
+}
+
+.conteudo-dias li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 1.875rem;
+}
+
+.conteudo-dias li.inactive {
+    color: #cccccc;
+}
+
+.conteudo-dias li.active {
+    color: #fafafa;
+}
+
+.conteudo-dias li::before {
+    background-color: #fafafa;
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.conteudo-dias li.active::before {
+    background-color: #cd426a;
+}
+
+.conteudo-dias li:not(.active):hover::before {
+    background-color: #fafafa;
+}

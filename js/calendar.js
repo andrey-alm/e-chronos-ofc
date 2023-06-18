@@ -1,6 +1,6 @@
 const daysTag = document.querySelector(".conteudo-dias"),
 currentDate = document.querySelector(".cabecalho-data"),
-prevNextIcon = document.querySelectorAll(".cabecalho-icones span");
+prevNextIcon = document.querySelectorAll(".cabecalho-icones ion-icon");
 
 // Obtendo data, mês e ano vigente
 let date = new Date(),

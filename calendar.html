@@ -6,11 +6,12 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title> E-Chronos | Calendário </title>
         <link rel = "icon" href = "img/favicon.ico">
-        <link rel = "stylesheet" href = "css/calendario.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-        <script src = "js/calendario.js" defer> </script>
+        <link rel = "stylesheet" href = "css/responsive.css">
+        <link rel = "stylesheet" href = "css/calendar.css">
+        <script src = "js/calendar.js" defer> </script>
+        <script src = "js/responsive.js" defer> </script>
     </head>
-    <body>
+    <body onresize = "adequarMenu()">
         <header class = "cabecalho">
             <div class = "cabecalho-imagem">
                 <img src = "img/logotipo.png" alt = "Logo da E-Chronos">
@@ -23,8 +24,9 @@
             </div>
 
             <nav class = "cabecalho-menu">
-                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/cadastro.html" target = "_blank" rel = "noopener"> Criar uma conta </a>
-                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/quem-somos.html" target = "_blank" rel = "noopener"> Quem somos </a>
+                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/index.html" target = "_blank" rel = "noopener"> Fazer login </a>
+                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/account.html" target = "_blank" rel = "noopener"> Criar uma conta </a>
+                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/about-us.html" target = "_blank" rel = "noopener"> Quem somos </a>
                 <ion-icon name = "person-circle-outline"> </ion-icon>
             </nav>
         </header>
@@ -35,8 +37,8 @@
                     <p class = "cabecalho-data"></p>
 
                     <div class = "cabecalho-icones">
-                        <span id = "prev" class = "material-symbols-rounded"> chevron_left </span>
-                        <span id = "next" class = "material-symbols-rounded"> chevron_right </span>
+                        <ion-icon name = "chevron-back-outline"> </ion-icon>
+                        <ion-icon name = "chevron-forward-outline"> </ion-icon>
                     </div>
                 </div>
 

@@ -1,0 +1,38 @@
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: initial;
+        padding: 0;
+        gap: 0;
+    }
+
+    .cabecalho-imagem {
+        display: none;
+    }
+
+    .cabecalho-ham {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.625rem;
+        border-bottom: 0.4px solid #141414;
+    }
+
+    .cabecalho-menu {
+        display: none;
+    }
+
+    .menu-item {
+        text-align: center;
+        display: block;
+        border-bottom: 0.4px solid #141414;
+    }
+
+    .menu-item:hover {
+        background-color: #fafafa;
+        border-bottom: 0.4px solid #141414;
+    }
+
+    main {
+        border-top: 0;
+    }
+}

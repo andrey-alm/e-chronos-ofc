@@ -105,9 +105,9 @@ main {
     flex-direction: row;
 }
 
-.cabecalho-icones span {
-    height: 2.375rem;
-    width: 2.375rem;
+.cabecalho-icones ion-icon {
+    height: 1.5rem;
+    width: 1.5rem;
     margin: 0 0.125rem;
     cursor: pointer;
     color: #cccccc;
@@ -118,11 +118,11 @@ main {
     border-radius: 50%;
 }
 
-.cabecalho-icones span:last-child {
+.cabecalho-icones ion-icon:last-child {
     margin-right: -0.625rem;
 }
 
-.cabecalho-icones span:hover {
+.cabecalho-icones ion-icon:hover {
     background-color: #fafafa;
 }
 

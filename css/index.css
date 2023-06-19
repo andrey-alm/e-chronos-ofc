@@ -63,6 +63,7 @@ body {
     color: #141414;
     font-family: "Inter";
     text-decoration: none;
+    text-align: center;
     padding: 0.625rem;
     border-bottom: 2px solid transparent;
 }
@@ -151,47 +152,4 @@ main {
 .login-descricao:focus {
     color: #cd426a;
     text-decoration: underline #cd426a 2px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-    .cabecalho {
-        flex-direction: column;
-        align-items: initial;
-        padding: 0;
-        gap: 0;
-    }
-
-    .cabecalho-imagem {
-        display: none;
-    }
-
-    .cabecalho-ham {
-        display: flex;
-        justify-content: flex-end;
-        padding: 0.625rem;
-        border-bottom: 0.4px solid #141414;
-    }
-
-    .cabecalho-menu {
-        display: none;
-    }
-
-    .menu-item {
-        text-align: center;
-        display: block;
-        border-bottom: 0.4px solid #141414;
-    }
-
-    .menu-item:hover {
-        background-color: #fafafa;
-        border-bottom: 0.4px solid #141414;
-    }
-
-    main {
-        border-top: 0;
-    }
-
-    .conteudo-login {
-        padding: 1.625rem;
-    }
 }

@@ -6,10 +6,10 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title> E-Chronos | Calendário </title>
         <link rel = "icon" href = "img/favicon.ico">
-        <link rel = "stylesheet" href = "css/responsive.css">
         <link rel = "stylesheet" href = "css/calendar.css">
+        <link rel = "stylesheet" href = "css/responsive-menu.css">
         <script src = "js/calendar.js" defer> </script>
-        <script src = "js/responsive.js" defer> </script>
+        <script src = "js/responsive-menu.js" defer> </script>
     </head>
     <body onresize = "adequarMenu()">
         <header class = "cabecalho">
@@ -37,8 +37,8 @@
                     <p class = "cabecalho-data"></p>
 
                     <div class = "cabecalho-icones">
-                        <ion-icon name = "chevron-back-outline"> </ion-icon>
-                        <ion-icon name = "chevron-forward-outline"> </ion-icon>
+                        <ion-icon id = "prev" name = "chevron-back-outline"> </ion-icon>
+                        <ion-icon id = "next" name = "chevron-forward-outline"> </ion-icon>
                     </div>
                 </div>
 

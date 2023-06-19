@@ -1,9 +1,8 @@
-@media screen and (min-width: 240px) and (max-width: 768px) {
+@media screen and (min-width: 0) and (max-width: 768px) {
     .cabecalho {
         flex-direction: column;
         align-items: initial;
         padding: 0;
-        gap: 0;
     }
 
     .cabecalho-imagem {
@@ -12,6 +11,7 @@
 
     .cabecalho-ham {
         display: flex;
+        flex-direction: row;
         justify-content: flex-end;
         padding: 0.625rem;
         border-bottom: 0.4px solid #141414;
@@ -22,7 +22,6 @@
     }
 
     .menu-item {
-        text-align: center;
         display: block;
         border-bottom: 0.4px solid #141414;
     }

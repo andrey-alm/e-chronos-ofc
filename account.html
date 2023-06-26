@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title> E-Chronos | Criar conta </title>
+        <link rel = "icon" href = "img/favicon.ico">
+        <link rel = "stylesheet" href = "css/account.css">
+        <script src = "js/account.js" defer> </script>
+    </head>
+    <body onresize = "adequarMenu()">
+        <header class = "cabecalho">
+            <div class = "cabecalho-imagem">
+                <img src = "img/logotipo.png" alt = "Logo da E-Chronos">
+                <h1 class = "nome-empresa"> E-Chronos </h1>
+            </div>
+
+            <div class = "cabecalho-ham">
+                <ion-icon class = "abrir" name = "reorder-three-outline"> </ion-icon>
+                <ion-icon class = "fechar" name = "close-outline"> </ion-icon>
+            </div>
+
+            <nav class = "cabecalho-menu">
+                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/index.html" target = "_blank" rel = "noopener"> Fazer login</a>
+                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/account.html" target = "_blank" rel = "noopener"> Criar uma conta </a>
+                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/calendar.html" target = "_blank" rel = "noopener"> Entre em contato </a>
+                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/about-us.html" target = "_blank" rel = "noopener"> Quem somos </a>
+            </nav>
+        </header>
+
+        <main>
+            <section class = "conteudo">
+                <div class = "conteudo-acesso">
+                    <div class = "acesso-imagem">
+                        <img src = "img/logotipo.png" alt = "Logo da E-Chronos">
+                        <h3> Inscreva-se agora e planeje seu futuro </h3>
+                    </div>
+
+                    <form class = "acesso-formulario">
+                        <input id = "username" type = "text" placeholder = "Digite seu nome completo" autofocus required>
+                        <input id = "user-ra" type = "number" placeholder = "Digite seu nº de matrícula" required>
+
+                        <div class = "formulario-senha">
+                            <input id = "password" type = "password" placeholder = "Digite sua senha" required>
+                            <ion-icon class = "eye" id = "eye-on" name = "eye-outline"> </ion-icon>
+                            <ion-icon class = "eye" id = "eye-off" name = "eye-off-outline"> </ion-icon>
+                        </div>
+
+                        <div class = "formulario-senha">
+                            <input id = "password" type = "password" placeholder = "Confirme sua senha" required>
+                            <ion-icon class = "eye" id = "eye-on" name = "eye-outline"> </ion-icon>
+                            <ion-icon class = "eye" id = "eye-off" name = "eye-off-outline"> </ion-icon>
+                        </div>
+
+                        <input id = "form_submit" type = "submit" value = "Cadastrar">
+                    </form>
+
+                    <div class = "acesso-msg"> </div>
+
+                    <p class = "acesso-descricao">
+                        Já tem um conta?
+                        <a href = "https://andrey-alm.github.io/e-chronos-ofc/index.html" target = "_blank" rel = "noopener"> Faça login </a>
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <script type = "module" src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
+        <script nomodule src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
+    </body>
+</html>

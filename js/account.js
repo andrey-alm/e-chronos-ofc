@@ -2,7 +2,7 @@ let userName = document.querySelector("#username")
 let userAccess = document.querySelector("#user-ra")
 let passTwo = document.querySelector("#conf-pass")
 
-let btnEye = document.querySelector(".fa-eye")
+let btnEye = document.querySelector(".eye")
 btnEye.addEventListener("click", seePass)
 
 function seePass() {

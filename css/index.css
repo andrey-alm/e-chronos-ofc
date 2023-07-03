@@ -140,16 +140,19 @@ main {
 }
 
 .login-descricao a {
-    color: #141414;
-    text-decoration: none;
+    color: #cc4a6f;
+    text-decoration: underline #cc4a6f 2px;
+    text-underline-offset: 0.25rem;
 }
 
 .login-descricao a:hover {
-    color: #cd426a;
-    text-decoration: underline #cd426a 2px;
+    color: #ce0941;
+    text-decoration: underline #ce0941 2px;
+    text-underline-offset: 0.25rem;
 }
 
-.login-descricao:focus {
-    color: #cd426a;
-    text-decoration: underline #cd426a 2px;
+.login-descricao a:focus {
+    color: #ce0941;
+    text-decoration: underline #ce0941 2px;
+    text-underline-offset: 0.25rem;
 }

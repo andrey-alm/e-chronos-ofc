@@ -7,7 +7,9 @@
         <title> E-Chronos | Criar conta </title>
         <link rel = "icon" href = "img/favicon.ico">
         <link rel = "stylesheet" href = "css/account.css">
+        <link rel = "stylesheet" href = "css/responsive-menu.css">
         <script src = "js/account.js" defer> </script>
+        <script src = "js/responsive-menu.js" defer> </script>
     </head>
     <body onresize = "adequarMenu()">
         <header class = "cabecalho">
@@ -22,10 +24,9 @@
             </div>
 
             <nav class = "cabecalho-menu">
-                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/index.html" target = "_blank" rel = "noopener"> Fazer login</a>
-                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/account.html" target = "_blank" rel = "noopener"> Criar uma conta </a>
-                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/calendar.html" target = "_blank" rel = "noopener"> Entre em contato </a>
-                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/about-us.html" target = "_blank" rel = "noopener"> Quem somos </a>
+                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/index.html"> Fazer login </a>
+                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/account.html"> Criar uma conta </a>
+                <a class = "menu-item" href = "https://andrey-alm.github.io/e-chronos-ofc/about-us.html"> Quem somos </a>
             </nav>
         </header>
 
@@ -38,29 +39,29 @@
                 <div class = "conteudo-formulario">
                     <form action = "#">
                         <div class = "formulario-titulo">
-                            <h3> Inscreva-se agora e planeje seu futuro </h3>
+                            <h3> Inscreva-se agora e planeje seu futuro! </h3>
                         </div>
 
                         <div class = "formulario-entrada">
                             <div class = "entrada-box">
-                                <label for = "username"> Nome completo </label>
+                                <label for = "username" class = "requi"> Nome completo </label>
                                 <input id = "username" type = "text" placeholder = "Digite seu nome completo" autofocus required>
                             </div>
 
                             <div class = "entrada-box">
-                                <label for = "user-ra"> Número de matrícula </label>
-                                <input id = "user-ra" type = "text" placeholder = "Digite seu nº de matrícula" required>
+                                <label for = "user-ra" class = "requi"> Número de matrícula </label>
+                                <input id = "user-ra" type = "number" placeholder = "Digite seu nº de matrícula" required>
                             </div>
 
                             <div class = "entrada-box">
-                                <label for = "password"> Senha </label>
+                                <label for = "password" class = "requi"> Senha </label>
                                 <input id = "password" type = "password" placeholder = "Digite sua senha" required>
                                 <ion-icon class = "eye" id = "eye-on" name = "eye-outline"> </ion-icon>
                                 <ion-icon class = "eye" id = "eye-off" name = "eye-off-outline"> </ion-icon>
                             </div>
 
                             <div class = "entrada-box">
-                                <label for = "confirm-password"> Confirme sua senha </label>
+                                <label for = "confirm-password" class = "requi"> Confirme sua senha </label>
                                 <input id = "confirm-password" type = "password" placeholder = "Digite sua senha novamente" required>
                                 <ion-icon class = "eye on" id = "eye-on" name = "eye-outline"> </ion-icon>
                                 <ion-icon class = "eye off" id = "eye-off" name = "eye-off-outline"> </ion-icon>

@@ -47,7 +47,7 @@ body {
 }
 
 .cabecalho-ham ion-icon {
-    color: #141414;
+    color: #1c1d1f;
     width: 3rem;
     height: 3rem;
     cursor: pointer;
@@ -60,7 +60,7 @@ body {
 }
 
 .menu-item {
-    color: #141414;
+    color: #1c1d1f;
     text-decoration: none;
     text-align: center;
     padding: 0.625rem;
@@ -69,7 +69,7 @@ body {
 
 .menu-item:hover {
     transition: 0.3s;
-    border-bottom: 2px solid #141414;
+    border-bottom: 2px solid #1c1d1f;
 }
 
 main {
@@ -78,7 +78,7 @@ main {
     height: 85vh;
     justify-content: center;
     align-items: center;
-    border-top: 0.4px solid #141414;
+    border-top: 0.4px solid #1c1d1f;
 }
 
 .conteudo {
@@ -152,7 +152,7 @@ main {
 
 .entrada-box input {
     background-color: #fafafa;
-    color: #141414;
+    color: #1c1d1f;
     border: none;
     height: 2.5rem;
     outline: none;
@@ -182,6 +182,10 @@ main {
     text-transform: uppercase;
     cursor: pointer;
     text-align: center;
+}
+
+.formulario-envio input:hover {
+    background-color: #cf2454;
 }
 
 input::-webkit-outer-spin-button,
@@ -230,7 +234,7 @@ input[type=number] {
 }
 
 /* .acesso-descricao {
-    color: #141414;
+    color: #1c1d1f;
 }
 
 .acesso-descricao a {
@@ -250,3 +254,8 @@ input[type=number] {
     text-decoration: underline #ce0941 2px;
     text-underline-offset: 0.25rem;
 } */
+
+.requi:after {
+    content: "*";
+    color: #ff0000;
+}

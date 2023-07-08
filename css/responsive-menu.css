@@ -14,7 +14,7 @@
         flex-direction: row;
         justify-content: flex-end;
         padding: 0.625rem;
-        border-bottom: 0.4px solid #141414;
+        border-bottom: 0.4px solid #1c1d1f;
     }
 
     .cabecalho-menu {
@@ -23,12 +23,12 @@
 
     .menu-item {
         display: block;
-        border-bottom: 0.4px solid #141414;
+        border-bottom: 0.4px solid #1c1d1f;
     }
 
     .menu-item:hover {
         background-color: #fafafa;
-        border-bottom: 0.4px solid #141414;
+        border-bottom: 0.4px solid #1c1d1f;
     }
 
     main {

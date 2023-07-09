@@ -140,11 +140,12 @@ main {
 }
 
 .login-descricao {
+    font-size: 0.875rem;
     color: #1c1d1f;
 }
 
 .login-descricao a {
-    color: #cc4a6f;
+    color:#1c1d1f;
     text-decoration: underline #cc4a6f 2px;
     text-underline-offset: 0.25rem;
 }

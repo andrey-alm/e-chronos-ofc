@@ -82,6 +82,7 @@ main {
 }
 
 .conteudo {
+    max-height: 70vh;
     max-width: 80vw;
     display: flex;
     flex-direction: row;
@@ -198,20 +199,12 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-.eye {
-    font-size: 1.5rem;
-    cursor: pointer;
+.requi:after {
+    content: "*";
+    color: #ff0000;
 }
 
-#eye-on {
-    display: none;
-}
-
-#eye-off {
-    display: none;
-}
-
-@media screen and (min-width: 0) and (max-width: 768px) {
+@media screen and (min-width: 0) and (max-width: 48em) {
     .conteudo-imagem {
         display: none;
     }
@@ -227,35 +220,8 @@ input[type=number] {
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1110px) {
+@media screen and (min-width: 769px) and (max-width: 69.375em) {
     .formulario-entrada {
         flex-direction: column;
     }
-}
-
-/* .acesso-descricao {
-    color: #1c1d1f;
-}
-
-.acesso-descricao a {
-    color: #cd426a;
-    text-decoration: underline #cd426a 2px;
-    text-underline-offset: 0.25rem;
-}
-
-.acesso-descricao a:hover {
-    color: #ce0941;
-    text-decoration: underline #ce0941 2px;
-    text-underline-offset: 0.25rem;
-}
-
-.acesso-descricao:focus {
-    color: #ce0941;
-    text-decoration: underline #ce0941 2px;
-    text-underline-offset: 0.25rem;
-} */
-
-.requi:after {
-    content: "*";
-    color: #ff0000;
 }

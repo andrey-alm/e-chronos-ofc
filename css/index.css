@@ -89,7 +89,7 @@ main {
     padding: 2.25rem;
     gap: 1.25rem;
     border-radius: 0.75rem;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
+    box-shadow: 0.375rem 0.375rem 0.625rem rgba(0, 0, 0, 0.274);
 }
 
 .login-imagem {
@@ -116,23 +116,46 @@ main {
     width: 100%;
 }
 
-.login-formulario input {
+.formulario-entrada {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.formulario-entrada ion-icon {
+    font-size: 1.25rem;
+    background-color: #cd426a;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    color: #fafafa;
+    padding: 0.75rem;
+}
+
+.formulario-entrada input {
     background-color: #fafafa;
     color: #1c1d1f;
     border: none;
-    height: 2.875rem;
+    height: 2.75rem;
     outline: none;
-    border-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
     padding-left: 0.625rem;
     font-size: 0.875rem;
+    width: 100%;
 }
 
 .login-formulario [type=submit] {
     background-color: #cd426a;
+    height: 2.75rem;
     color: #fafafa;
+    border: none;
+    border-radius: 0.5rem;
     font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
+    width: 100%;
 }
 
 .login-formulario [type=submit]:hover {

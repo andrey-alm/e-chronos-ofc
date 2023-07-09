@@ -4,6 +4,7 @@
         <meta charset = "utf-8">
         <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta name = "description" content = "E-Chronos - Site acadêmico">
         <title> E-Chronos </title>
         <link rel = "icon" href = "img/favicon.ico">
         <link rel = "stylesheet" href = "css/index.css">
@@ -40,9 +41,17 @@
                     </div>
 
                     <form class = "login-formulario">
-                        <input id = "username" type = "text" placeholder = "Digite seu nome de usuário" autofocus required>
-                        <input id = "password" type = "password" placeholder = "Digite sua senha" required>
-                        <input id = "form_submit" type = "submit" value = "Entrar">
+                        <div class = "formulario-entrada">
+                            <ion-icon name = "person-outline"> </ion-icon>
+                            <input id = "username" type = "text" placeholder = "Digite seu nome de usuário" autofocus required>
+                        </div>
+                        <div class = "formulario-entrada">
+                            <ion-icon name = "lock-closed-outline"> </ion-icon>
+                            <input id = "password" type = "password" placeholder = "Digite sua senha" required>
+                        </div>
+                        <div class = "formulario-envio">
+                            <input id = "form_submit" type = "submit" value = "Acessar">
+                        </div>
                     </form>
 
                     <p class = "login-descricao">

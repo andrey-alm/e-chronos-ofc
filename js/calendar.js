@@ -1,13 +1,11 @@
-const daysTag = document.querySelector(".conteudo-dias"),
-currentDate = document.querySelector(".cabecalho-data"),
-prevNextIcon = document.querySelectorAll(".cabecalho-icones ion-icon");
+const currentDate = document.querySelector(".cabecalho-data")
+const prevNextIcon = document.querySelectorAll(".cabecalho-icones ion-icon")
+const daysTag = document.querySelector(".conteudo-dias")
 
-// Obtendo data, mês e ano vigente
-let date = new Date(),
-currYear = date.getFullYear(),
-currMonth = date.getMonth();
+let date = new Date()
+let currYear = date.getFullYear()
+let currMonth = date.getMonth()
 
-// Armazenando em um array o nome de todos os meses
 const months = [
     "Janeiro",
     "Fevereiro",
@@ -21,7 +19,7 @@ const months = [
     "Outubro",
     "Novembro",
     "Dezembro",
-];
+]
 
 const renderCalendar = () => {
     let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // obtendo primeiro dia do mês

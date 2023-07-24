@@ -161,48 +161,69 @@ main {
     margin-top: 1.875rem;
 }
 
-.conteudo-dias li.inactive {
+.conteudo-dias li.inactive { /* dias fora do mês atual */
     color: #cccccc;
 }
 
-.conteudo-dias li.active {
-    color: #fafafa;
-}
-
-.conteudo-dias li::before {
+.conteudo-dias li::before { /* cada dia do mês */
     background-color: #fafafa;
     position: absolute;
     content: "";
-    left: 50%;
-    top: 50%;
     height: 2.5rem;
     width: 2.5rem;
     z-index: -1;
-    border-radius: 50%;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 50%;
 }
 
-.conteudo-dias li.active::before {
+.conteudo-dias li.active::before { /* dia atual - bola */
     background-color: #cd426a;
 }
 
-.conteudo-dias li:not(.active):hover::before {
-    background-color: #fafafa;
+.conteudo-dias li.active { /* dia atual - conteudo */
+    color: #fafafa;
 }
 
-.conteudo-dias li.active:hover::before {
+.conteudo-dias li:not(.active):hover::before { /* hover do dia - bola */
     background-color: #cd426a;
 }
 
-.conteudo-dias li.active:hover {
-    background-color: #cd426a;
+.conteudo-dias li:not(.active):hover { /* hover do dia - conteudo */
+    color: #fafafa;
+}
+
+.conteudo-dias li.inactive:hover::before { /* hover do dia do mês anterior - bola */
+    background-color: #dd88a0;
 }
 
 .atividades {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 1.25rem;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.atividades input {
+    background-color: #cd426a;
+    height: 2.75rem;
+    color: #fafafa;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+}
+
+.atividades-totais {
+    background-color: #c9e939;
+    width: 100%;
+    height: 70%;
 }
 
 section {

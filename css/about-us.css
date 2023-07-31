@@ -83,6 +83,7 @@ main {
 .container {
     display: flex;
     flex-direction: column;
+    max-width: 85vw;
     gap: 5rem;
 }
 
@@ -114,13 +115,18 @@ main {
     gap: 3rem;
 }
 
+.sobre-imagem {
+    overflow: hidden;
+}
+
 .sobre-imagem img {
-    min-width: 250px;
-    max-width: 420px;
+    min-width: 13rem;
+    max-width: 25rem;
+    display: block;
     transition: 0.5s ease;
 }
 
-.sobre-imagem img:hover {
+.sobre-imagem:hover img {
     transform: scale(1.2);
 }
 
@@ -142,33 +148,12 @@ main {
     font-size: 1.125rem;
     line-height: 1.5;
     color: #1c1d1f;
-}
-
-.sobre-conteudo a {
-    background-color: #cd426a;
-    padding: 0.625rem 1.25rem;
-    font-size: 1.25rem;
-    color: #fafafa;
-    text-decoration: none;
-    border-radius: 1.5rem;
-    transition: 0.3s ease;
-    width: 5.25rem;
-    text-align: center;
-}
-
-.sobre-conteudo a:hover {
-    background-color: #d42c5c;
+    text-align: justify;
 }
 
 @media screen and (min-width: 0) and (max-width: 48em) {
-
-
     .container {
-        gap: 2rem;
-    }
-
-    .sobre {
-        flex-direction: column;
+        max-width: 80vw;
         gap: 2rem;
     }
 
@@ -176,23 +161,21 @@ main {
         font-size: 2.25rem;
     }
 
-    .titulo p {
-        font-size: 1.125rem;
+    .sobre {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .sobre-imagem img {
+        max-width: 18.75rem;
     }
 
     .sobre-conteudo {
-        max-width: 85vw;
+        max-width: none;
     }
 
     .sobre-conteudo p {
         font-size: 1rem;
-    }
-
-    .conteudo-mais {
-        font-size: 1rem;
-    }
-
-    .sobre-imagem img {
-        width: 300px;
+        text-align: left;
     }
 }

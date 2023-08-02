@@ -80,57 +80,78 @@ main {
     border-top: 0.4px solid #1c1d1f;
 }
 
-.conteudo {
-    max-height: 70vh;
-    max-width: 80vw;
+.container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 80%;
     border-radius: 0.75rem;
     box-shadow: 0.375rem 0.375rem 0.625rem rgba(0, 0, 0, 0.274);
 }
 
-.conteudo-imagem {
+.imagem {
     background-image: linear-gradient(#1aa37a, #9dffb3);
-    width: 50%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    width: 50%;
+    padding: 1rem;
     border-top-left-radius: 0.75rem;
     border-bottom-left-radius: 0.75rem;
 }
 
-.conteudo-imagem img {
-    width: 31rem;
+.imagem img {
+    width: 28rem;
 }
 
-.conteudo-formulario {
+.formulario {
     background-color: #fafafa;
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    width: 50%;
+    padding: 2.25rem;
     border-top-right-radius: 0.75rem;
     border-bottom-right-radius: 0.75rem;
 }
 
-.conteudo-formulario form {
+.formulario form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .formulario-titulo {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
-.formulario-titulo h3 {
+/* revisado aqui */
+
+.titulo-texto h2 {
+    text-decoration: underline #cd426a 0.25rem;
+    text-underline-offset: 0.5rem;
     color: #2e2e2e;
+}
+
+.titulo-botao button {
+    background-color: #cd426a;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.titulo-botao button:hover {
+    background-color: #cf2454;
+}
+
+.titulo-botao button a {
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 .formulario-entrada {
@@ -138,16 +159,14 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     gap: 1rem;
-    width: 100%;
+    padding: 1rem;
 }
 
 .entrada-box {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
+    gap: 0.625rem;
 }
 
 .entrada-box input {
@@ -166,11 +185,31 @@ main {
     outline: 1px solid #cd426a;
 }
 
-.entrada-box label {
+.entrada-box label,
+.acesso-titulo h6 {
     font-size: 0.875rem;
 }
 
+.formulario-acesso {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.acesso-conteudo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+
+.conteudo-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .formulario-envio input {
+    width: 100%;
     background-color: #cd426a;
     color: #fafafa;
     font-size: 1rem;
@@ -203,25 +242,64 @@ input[type=number] {
     color: #ff0000;
 }
 
-@media screen and (min-width: 0) and (max-width: 48em) {
+/* até aqui */
 
-    .conteudo-imagem {
+@media screen and (max-width: 80em) {
+    .container {
+        width: 50%;
+    }
+
+    .imagem {
         display: none;
     }
 
-    .conteudo-formulario {
-        width: inherit;
+    .formulario {
+        width: 100%;
         border-top-left-radius: 0.75rem;
         border-bottom-left-radius: 0.75rem;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 880px) and (max-width: 1050px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 879px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 48em) {
+    .container {
+        max-width: 85%;
+    }
+
+    .formulario {
+        padding: 1.5rem;
+    }
+
+    .formulario-titulo {
+        justify-content: center;
+    }
+    
+    .titulo-texto h2 {
+        font-size: 1.25rem;
     }
 
     .formulario-entrada {
         flex-direction: column;
+        padding: 0;
     }
-}
 
-@media screen and (min-width: 769px) and (max-width: 69.375em) {
-    .formulario-entrada {
+    .titulo-botao {
+        display: none;
+    }
+
+    .conteudo-box {
         flex-direction: column;
     }
 }

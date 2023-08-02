@@ -31,15 +31,20 @@
         </header>
 
         <main>
-            <section class = "conteudo">
-                <div class = "conteudo-imagem">
+            <div class = "container">
+                <div class = "imagem">
                     <img src = "img/conta.svg" alt = "Perfil de uma conta">
                 </div>
 
-                <div class = "conteudo-formulario">
+                <section class = "formulario">
                     <form action = "#">
                         <div class = "formulario-titulo">
-                            <h3> Inscreva-se agora e planeje seu futuro! </h3>
+                            <div class = "titulo-texto">
+                                <h2> Inscreva-se agora! </h2>
+                            </div>
+                            <div class = "titulo-botao">
+                                <button> <a href = "https://andrey-alm.github.io/e-chronos-ofc/index.html"> Entrar </a> </button>
+                            </div>
                         </div>
 
                         <div class = "formulario-entrada">
@@ -60,16 +65,34 @@
 
                             <div class = "entrada-box">
                                 <label for = "confirm-password" class = "requi"> Confirme sua senha </label>
-                                <input id = "confirm-password" type = "password" placeholder = "Digite sua senha novamente" required>
+                                <input id = "confirm-password" type = "password" placeholder = "Digite a senha novamente" required>
+                            </div>
+                        </div>
+
+                        <div class = "formulario-acesso">
+                            <div class = "acesso-titulo">
+                                <h6> Tipo de perfil: </h6>
+                            </div>
+
+                            <div class = "acesso-conteudo">
+                                <div class = "conteudo-box">
+                                    <input type = "radio" id = "professor">
+                                    <label for = "professor"> Professor </label>
+                                </div>
+
+                                <div class = "conteudo-box">
+                                    <input type = "radio" id = "aluno">
+                                    <label for = "aluno"> Aluno </label>
+                                </div>
                             </div>
                         </div>
 
                         <div class = "formulario-envio">
-                            <input id = "form_submit" type = "submit" value = "Cadastrar">
+                            <input id = "cadastro" type = "submit" value = "Cadastrar">
                         </div>
                     </form>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
 
         <script type = "module" src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>

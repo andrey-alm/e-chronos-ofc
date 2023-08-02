@@ -75,7 +75,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     align-items: center;
     border-top: 0.4px solid #1c1d1f;
 }
@@ -241,6 +242,4 @@ section {
     section {
         flex-direction: column;
     }
-
-
 }

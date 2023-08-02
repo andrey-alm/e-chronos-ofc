@@ -75,7 +75,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     align-items: center;
     border-top: 0.4px solid #1c1d1f;
 }
@@ -127,8 +128,6 @@ main {
     justify-content: space-between;
 }
 
-/* revisado aqui */
-
 .titulo-texto h2 {
     text-decoration: underline #cd426a 0.25rem;
     text-underline-offset: 0.5rem;
@@ -171,7 +170,6 @@ main {
 
 .entrada-box input {
     background-color: #fafafa;
-    color: #1c1d1f;
     border: none;
     height: 2.5rem;
     outline: none;
@@ -209,8 +207,8 @@ main {
 }
 
 .formulario-envio input {
-    width: 100%;
     background-color: #cd426a;
+    width: 100%;
     color: #fafafa;
     font-size: 1rem;
     border-radius: 0.5rem;
@@ -242,11 +240,10 @@ input[type=number] {
     color: #ff0000;
 }
 
-/* até aqui */
-
 @media screen and (max-width: 80em) {
     .container {
-        width: 50%;
+        width: 600px;
+        max-width: 80vw;
     }
 
     .imagem {
@@ -257,46 +254,28 @@ input[type=number] {
         width: 100%;
         border-top-left-radius: 0.75rem;
         border-bottom-left-radius: 0.75rem;
-        padding: 2rem;
     }
 }
 
-@media screen and (min-width: 880px) and (max-width: 1050px) {
+@media screen and (min-width: 0) and (max-width: 48em) {
     .container {
-        width: 60%;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 879px) {
-    .container {
-        width: 70%;
-    }
-}
-
-@media screen and (max-width: 48em) {
-    .container {
-        max-width: 85%;
-    }
-
-    .formulario {
-        padding: 1.5rem;
+        width: 320px;
     }
 
     .formulario-titulo {
         justify-content: center;
     }
-    
+
     .titulo-texto h2 {
         font-size: 1.25rem;
     }
 
-    .formulario-entrada {
-        flex-direction: column;
-        padding: 0;
-    }
-
     .titulo-botao {
         display: none;
+    }
+
+    .formulario-entrada {
+        flex-direction: column;
     }
 
     .conteudo-box {

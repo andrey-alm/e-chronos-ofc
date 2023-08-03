@@ -7,7 +7,9 @@
         <title> E-Chronos | Esqueceu a senha </title>
         <link rel = "icon" href = "img/favicon.ico">
         <link rel = "stylesheet" href = "css/lost-pass.css">
+        <link rel = "stylesheet" href = "css/responsive-menu.css">
         <script src = "js/lost-pass.js" defer> </script>
+        <script src = "js/responsive-menu.js" defer> </script>
     </head>
     <body onresize = "adequarMenu()">
         <header class = "cabecalho">
@@ -35,63 +37,5 @@
 
         <script type = "module" src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
         <script nomodule src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
-
-        <script>
-            let cabeca = document.querySelector(".cabecalho")
-            let img = document.querySelector(".cabecalho-imagem")
-            let ham = document.querySelector(".cabecalho-ham")
-let menu = document.querySelector(".cabecalho-menu")
-let abrir = document.querySelector(".abrir")
-let fechar = document.querySelector(".fechar")
-ham.addEventListener("click", testeMenu)
-
-function abrirMenu() {
-    if (menu.style.flexDirection == "row") {
-        cabeca.style.flexDirection = "column"
-        cabeca.style.padding = "0"
-        menu.style.gap = "0"
-        img.style.display = "none"
-        menu.style.flexDirection = "column"
-        fechar.style.display = "flex"
-        abrir.style.display = "none"
-    } else {
-        cabeca.style.flexDirection = "row"
-        cabeca.style.padding = "1.25rem"
-        menu.style.gap = "1.875rem"
-        img.style.display = "block"
-        menu.style.flexDirection = "row"
-        menu.style.display = "none"
-        abrir.style.display = "flex"
-        fechar.style.display = "none"
-    }
-}
-
-function testeMenu() {
-    if (menu.style.flexDirection == "column") {
-        abrirMenu()
-    } else {
-        menu.style.display = "flex"
-    menu.style.flexDirection = "row"
-    abrirMenu()
-    }
-}
-
-function adequarMenu() {
-    if (window.innerWidth >= 768) {
-        menu.style.display = "flex"
-    } else {
-        cabeca.style.flexDirection = "row"
-        abrir.style.display = "flex"
-        menu.style.display = "none"
-        menu.style.flexDirection = "row"
-        cabeca.style.flexDirection = "row"
-        cabeca.style.padding = "1.25rem"
-        menu.style.gap = "1.875rem"
-        img.style.display = "flex"
-        img.style.flexDirection = "row"
-    }
-}
-
-        </script>
     </body>
 </html>

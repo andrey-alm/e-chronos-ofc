@@ -184,3 +184,13 @@ main {
     text-decoration: underline #ce0941 2px;
     text-underline-offset: 0.25rem;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

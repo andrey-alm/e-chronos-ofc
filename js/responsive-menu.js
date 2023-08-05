@@ -5,9 +5,9 @@ let menu = document.querySelector(".cabecalho-menu")
 let abrir = document.querySelector(".abrir")
 let fechar = document.querySelector(".fechar")
 
-ham.addEventListener("click", testeMenu)
+ham.addEventListener("click", testarMenu)
 
-function testeMenu() {
+function testarMenu() {
     if (menu.style.flexDirection == "column") {
         abrirMenu()
     } else {
@@ -39,18 +39,20 @@ function abrirMenu() {
 }
 
 function adequarMenu() {
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth >= 769) {
         menu.style.display = "flex"
         menu.style.flexDirection = "row"
         menu.style.gap = "1.875rem"
         cabecalho.style.padding = "1.25rem"
         cabecalho.style.flexDirection = "row"
+        img.style.display = "flex"
+        img.style.flexDirection = "row"
     } else {
         abrir.style.display = "flex"
         menu.style.display = "none"
         cabecalho.style.padding = "0.75rem 1rem"
-        img.style.display = "flex"
-        img.style.flexDirection = "row"
+        cabecalho.style.flexDirection = "row"
         fechar.style.display = "none"
+        img.style.display = "flex"
     }
 }

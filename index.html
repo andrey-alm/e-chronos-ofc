@@ -9,7 +9,6 @@
         <link rel = "icon" href = "img/favicon.ico">
         <link rel = "stylesheet" href = "css/index.css">
         <link rel = "stylesheet" href = "css/responsive-menu.css">
-        <script src = "js/index.js" defer> </script>
         <script src = "js/responsive-menu.js" defer> </script>
         <script src = "js/auth-access.js" defer> </script>
     </head>
@@ -43,11 +42,11 @@
                     <form class = "login-formulario">
                         <div class = "formulario-entrada">
                             <ion-icon name = "person-outline"> </ion-icon>
-                            <input id = "username" type = "text" placeholder = "Digite seu nome de usuário" autofocus required>
+                            <input id = "username" type = "number" placeholder = "Digite seu nome de usuário" autofocus required>
                         </div>
                         <div class = "formulario-entrada">
                             <ion-icon name = "lock-closed-outline"> </ion-icon>
-                            <input id = "password" type = "password" placeholder = "Digite sua senha" required>
+                            <input id = "password" type = "password" placeholder = "Digite sua senha" autocomplete = "current-password" required>
                         </div>
                         <div class = "formulario-envio">
                             <input id = "form_submit" type = "submit" value = "Acessar">
@@ -55,8 +54,7 @@
                     </form>
 
                     <p class = "login-descricao">
-                        <a href = "https://andrey-alm.github.io/e-chronos-ofc/account.html" target = "_blank" rel = "noopener"> Criar conta </a> |
-                        <a href = "https://andrey-alm.github.io/e-chronos-ofc/lost-pass.html" target = "_blank" rel = "noopener"> Esqueceu sua senha? </a>
+                        <a href = "https://andrey-alm.github.io/e-chronos-ofc/account.html" target = "_blank" rel = "noopener"> Criar uma nova conta </a>
                     </p>
                 </div>
             </section>

@@ -20,7 +20,7 @@ function testeMenu() {
 function abrirMenu() {
     if (menu.style.flexDirection == "column") {
         cabecalho.style.flexDirection = "row"
-        cabecalho.style.padding = "0.75rem"
+        cabecalho.style.padding = "0.75rem 1rem"
         menu.style.gap = "1.875rem"
         menu.style.flexDirection = "row"
         menu.style.display = "none"
@@ -48,7 +48,7 @@ function adequarMenu() {
     } else {
         abrir.style.display = "flex"
         menu.style.display = "none"
-        cabecalho.style.padding = "0.75rem"
+        cabecalho.style.padding = "0.75rem 1rem"
         img.style.display = "flex"
         img.style.flexDirection = "row"
         fechar.style.display = "none"

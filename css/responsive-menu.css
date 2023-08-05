@@ -5,7 +5,7 @@
 
     .cabecalho {
         border-bottom: 0.4px solid #1c1d1f;
-        padding: 0.75rem;
+        padding: 0.75rem 1rem;
     }
 
     .cabecalho-imagem img {

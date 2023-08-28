@@ -14,9 +14,9 @@ function accessAccount() {
         pass: ""
     }
 
-    listUsers = JSON.parse(localStorage.getItem("listaUsers"))
+    listUsers = JSON.parse(localStorage.getItem("listaUsuarios")) // ou banco de dados
 
-    listUsers.array.forEach((item) => {
+    listUsers.forEach((item) => {
         if (userName.value == item.userCad && userPass.value == item.passCad) {
 
             userValid = {
@@ -28,14 +28,16 @@ function accessAccount() {
     })
 
     if (userName.value == userValid.user && userPass.value == userValid.pass) {
-        document.location.href = "https://andrey-alm.github.io/e-chronos-ofc/calendar.html"
+        document.location.href = "https://andrey-alm.github.io/e-chronos-ofc/spaces.html"
 
-        let authToken = Math.random().toString(16)
+        let authToken = "eC" + Math.random().toString(16).substring(2) + "ÇF"
+        localStorage.setItem("authToken", token)
+        localStorage.setItem("userLogged", JSON.stringify(userValid))
     }
 
     else {
-        userName.setAttribute("style", "border-color: red")
-        userPass.setAttribute("style", "border-color: red")
+        userName.setAttribute("style", "color: red")
+        userPass.setAttribute("style", "color: red")
         errorMsg.setAttribute("style", "display: block")
         errorMsg.innerHTML = "Usuário ou senha incorretos!"
         userName.focus()

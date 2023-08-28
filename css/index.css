@@ -146,7 +146,7 @@ main {
     width: 100%;
 }
 
-.formulario-envio input {
+.formulario-envio button {
     background-color: #cd426a;
     height: 2.75rem;
     color: #fafafa;
@@ -158,7 +158,7 @@ main {
     width: 100%;
 }
 
-.formulario-envio input:hover {
+.formulario-envio button:hover {
     background-color: #cf2454;
 }
 
@@ -193,4 +193,13 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+.login-msg {
+    text-align: center;
+    color: #ce0941;
+    background-color: #fafafa;
+    padding: 0.875px;
+    border-radius: 2px;
+    display: none;
 }

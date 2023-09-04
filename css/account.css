@@ -206,7 +206,7 @@ main {
     gap: 0.5rem;
 }
 
-.formulario-envio input {
+.formulario-envio button {
     background-color: #cd426a;
     width: 100%;
     color: #fafafa;
@@ -215,13 +215,12 @@ main {
     padding: 0 0.75rem;
     border: none;
     height: 2.5rem;
-    outline: none;
     text-transform: uppercase;
     cursor: pointer;
     text-align: center;
 }
 
-.formulario-envio input:hover {
+.formulario-envio button:hover {
     background-color: #cf2454;
 }
 
